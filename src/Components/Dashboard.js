@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import io from "socket.io-client"
 
-// const ENDPOINT = "http://localhost:4040/";
-const ENDPOINT = "https://task1-backend.herokuapp.com/";
+const ENDPOINT = "http://localhost:4040/";
+// const ENDPOINT = "https://task1-backend.herokuapp.com/";
 
 
 var socket = io.connect(ENDPOINT)
@@ -42,13 +42,15 @@ function Dashboard(props) {
 
 
     return (
-        <div id="content">
-            <h3>Welcome {props.name}</h3>
-            <div>
-                <button type="button"  id="button1" disabled={button1} onClick={clicked1}>Button 1</button>
-            </div>
-            <div>
-                <button type= "button"  id="button2" disabled={button2} onClick={clicked2}>Button 2</button>
+        <div id="main">
+            <div className="content">
+                <div className="heading">Welcome {props.name}</div>
+                <div>
+                    <button type="button"  id="button1" disabled={button1} onClick={clicked1}>Button 1</button>
+                </div>
+                <div>
+                    <button type= "button"  id="button2" disabled={button2} onClick={clicked2}>Button 2</button>
+                </div>
             </div>
         </div>
     )
