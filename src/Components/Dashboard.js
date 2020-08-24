@@ -3,8 +3,8 @@
 import React, { useState } from 'react'
 import io from "socket.io-client"
 
-const ENDPOINT = "http://localhost:4040/";
-// const ENDPOINT = "https://task1-backend.herokuapp.com/";
+// const ENDPOINT = "http://localhost:4040/";
+const ENDPOINT = "https://task1-backend.herokuapp.com/";
 
 
 var socket = io.connect(ENDPOINT)
