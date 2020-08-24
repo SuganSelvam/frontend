@@ -13,7 +13,7 @@ div{
     padding:10px;
 }
 
-#btn ,#button1, #button2{
+#btn{
     border: 2px solid orange;
     background: orange;
     color: white;

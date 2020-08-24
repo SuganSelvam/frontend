@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import io from "socket.io-client"
 
 // const ENDPOINT = "http://localhost:4040/";
@@ -41,7 +40,7 @@ function Dashboard(props) {
 
 
     return (
-        <div>
+        <div id="content">
             <h3>Welcome {props.name}</h3>
             <div>
                 <button type="button"  id="button1" disabled={button1} onClick={clicked1}>Button 1</button>
